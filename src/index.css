@@ -11,6 +11,13 @@ body{
 ul{
   list-style: none;
 }
+button{
+  all: unset;
+}
+button:hover{
+  cursor: pointer;
+  filter: brightness(1.4);
+}
 
 /* container */
 .container{
@@ -36,9 +43,37 @@ header{
   line-height: 50px;
   margin-bottom: 50px;
 }
+.manga-list h2{
+  text-transform: uppercase;
+}
+.manga-list li{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.btn-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #9e0202;
+}
 
 .form-container{
   display: flex;
   justify-content: center;
   gap: 10px;
 }
+.btn-form{
+  background-color: #ff6900;
+  color: #ffffff;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+}
+.input-form{
+  all: unset;
+  border: 2px solid black;
+}
+
