@@ -32,7 +32,7 @@ export default function Main(props){
                     ))}
                 </ul>
                 <form action="" className="form-container" onSubmit={sendForm}>
-                    <input required type="text" value={manga} onChange={event=> setManga(event.target.value)} className='input-form' />
+                    <input required type="text" value={manga} onChange={event=> setManga(event.target.value)} className='input-form' placeholder='Inserici qui il manga' />
                     <button className='btn-form'>Invia il manga da leggere</button>
                 </form>
             </div>
