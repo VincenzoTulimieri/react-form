@@ -3,15 +3,16 @@ import { useState } from 'react'
 
 export default function Main(props){
     const {mangaList} = props
+    const[manga, setManga]= useState('')
     console.log(mangaList)
-    const{manga, setManga}= useState('ciao')
-
-    
-    console.log(useState())
 
     function sendForm (event){
         event.preventDefault();
         console.log(manga)
+        const newMangaList =[...mangaList,manga]
+        console.log(newMangaList)
+        setManga(newMangaList)
+        
     }
 
     return(
@@ -25,7 +26,7 @@ export default function Main(props){
                     ))}
                 </ul>
                 <form action="" className="form-container" onSubmit={sendForm}>
-                    <input type="text" value={manga} />
+                    <input type="text" value={manga} onChange={event=> setManga(event.target.value)}/>
                     <button>invia il manga da leggere</button>
                 </form>
             </div>
