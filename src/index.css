@@ -34,4 +34,11 @@ header{
 /* main */
 .manga-list{
   line-height: 50px;
+  margin-bottom: 50px;
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
