@@ -3,3 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #e9e9e9;
+}
+ul{
+  list-style: none;
+}
+
+/* container */
+.container{
+  width: 1240px;
+  margin: 0 auto;
+}
+
+/* header */
+header{
+  padding: 50px;
+  background-color: #ff6900;
+  margin-bottom: 50px;
+}
+.header-title{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+/* main */
+.manga-list{
+  line-height: 50px;
+}
