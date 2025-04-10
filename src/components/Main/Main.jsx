@@ -7,7 +7,16 @@ export default function Main(props){
 
     function sendForm (event){
         event.preventDefault();
-        const newMangaList =[...mangaList,{title:manga}]
+
+        const newId = mangaList.length > 0 ? mangaList.at(-1).id + 1 : 1;
+
+        const newManga ={
+            id: newId,
+            title: manga,
+            description: 'descrizione manga'
+        }
+
+        const newMangaList =[...mangaList, newManga]
         console.log(newMangaList)
         setNewMangaList(newMangaList)
         setManga('')
